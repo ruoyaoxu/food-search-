@@ -10,6 +10,7 @@ Other than find the restaurant’s page or information, users can also see the v
 
 
 Data source and structure. Data source website https://docs.developer.yelp.com/reference/v3_business_search. Basic api https://api.yelp.com/v3/businesses/search json. Scraping in https://www.yelp.com + all restaurants. (html) Url is returned by the api search.
+You can get your private api key here. https://docs.developer.yelp.com/docs/fusion-authentication
 
 Cache codes are at the begining of the project.
 
