@@ -30,16 +30,6 @@ def save_cache(cache, cache_file_name):
 CACHE_FILE = 'cache.json'
 CACHE_DICT = load_cache(CACHE_FILE)
 
-def request_with_cache(url):
-    cache_dict = load_cache()
-    if url in cache_dict.keys():
-        print("Using Cache")
-        response = cache_dict[url]
-    else:
-        print("Fetching")
-        response = requests.get(url).text
-        save_cache(cache_dict)
-    return response
 
 def getJson(parameter):
     url = "https://api.yelp.com/v3/businesses/search"
